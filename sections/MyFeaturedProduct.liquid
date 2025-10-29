@@ -1,0 +1,46 @@
+
+  
+<div class="card">
+  <img src="{{ section.settings.products.featured_image | img_url:"master" }}" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>{{ section.settings.products.title }}</b></h4>
+    <p>{{ section.settings.products.price }}</p>
+  </div>
+  <button>Add to cart</button>
+</div>
+
+      {% stylesheet %}
+        .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+          width:33.3%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+      {% endstylesheet %}
+{% schema %}
+  {
+    "name": "My Featured Product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "products",
+        "label": "My product"
+      }
+    ],
+    "presets": [
+      {
+        "name": "My Featured Product"
+      }
+    ]
+  }
+{% endschema %}
