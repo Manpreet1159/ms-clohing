@@ -109,10 +109,17 @@
             "heading": "{{ product.metafields.custom.faq.value.question.value }}",
             "heading_size": "h1"
           }
+        },
+        "text_KCRUpi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.faq.value.answer | metafield_tag }}</p>"
+          }
         }
       },
       "block_order": [
-        "heading_wXJyT3"
+        "heading_wXJyT3",
+        "text_KCRUpi"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
