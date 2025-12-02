@@ -3,7 +3,7 @@
   {% for object in metaobjects.faq.values %}
     
     <div class="two-text-container">
-      <div class="text-item text-item--primary">Welcome to our store — hard coded text 1</div>
+      <div class="text-item text-item--primary">{{ object.question }}</div>
       <div class="text-item text-item--secondary">Shop the latest collection — hard coded text 2</div>
     </div>
   {% endfor %}
