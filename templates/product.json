@@ -99,42 +99,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "rich_text_UqnXte": {
-      "type": "rich-text",
-      "blocks": {
-        "text_KCRUpi": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.custom.multiple_faq | metafield_tag: field: 'question' }}"
-          }
-        },
-        "heading_wXJyT3": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.multiple_faq | metafield_text: field: 'answer_one' }}",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "text_KCRUpi",
-        "heading_wXJyT3"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "rich_text_UqnXte"
+    "related-products"
   ]
 }
