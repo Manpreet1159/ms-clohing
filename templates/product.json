@@ -103,23 +103,23 @@
     "rich_text_UqnXte": {
       "type": "rich-text",
       "blocks": {
+        "text_KCRUpi": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.multiple_faq | metafield_tag: field: 'question' }}"
+          }
+        },
         "heading_wXJyT3": {
           "type": "heading",
           "settings": {
             "heading": "{{ product.metafields.custom.multiple_faq | metafield_text: field: 'answer_one' }}",
             "heading_size": "h1"
           }
-        },
-        "text_KCRUpi": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
         }
       },
       "block_order": [
-        "heading_wXJyT3",
-        "text_KCRUpi"
+        "text_KCRUpi",
+        "heading_wXJyT3"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
