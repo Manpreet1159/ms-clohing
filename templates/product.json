@@ -106,14 +106,14 @@
         "heading_wXJyT3": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.faq.value.question.value }}",
+            "heading": "{{ product.metafields.custom.multiple_faq | metafield_text: field: 'answer_one' }}",
             "heading_size": "h1"
           }
         },
         "text_KCRUpi": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.faq.value.answer | metafield_tag }}</p>"
+            "text": ""
           }
         }
       },
